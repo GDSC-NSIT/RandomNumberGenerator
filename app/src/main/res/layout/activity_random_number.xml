@@ -5,7 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.sgagg.demoapp.RandomNumberActivity">
-
+    
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:text="HERE IS A NUMBER BETWEEN O AND "
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+    
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
