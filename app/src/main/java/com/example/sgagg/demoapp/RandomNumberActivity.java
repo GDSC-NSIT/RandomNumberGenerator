@@ -13,16 +13,24 @@ public class RandomNumberActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_random_number);
+        
+        //getting heading of this activity
+        TextView heading = (TextView) findViewById(R.id.textView2);
 
         TextView tv = (TextView)findViewById(R.id.randomButton);
         Intent i = getIntent();
 
         int itr = i.getIntExtra(MainActivity.COUNT_KEY, -1);
+        
+        Integer itr2 =(Integer)itr;
 
         Random random = new Random();
 
         Integer randomNum = random.nextInt(itr);
 
         tv.setText(randomNum.toString());
+        
+        //change the heading by appending the sentence
+        heading.append(itr2.toString());
     }
 }
